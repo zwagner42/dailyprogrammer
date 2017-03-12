@@ -1,7 +1,5 @@
 #Easy_#2 program where we will make a calculator for magic damage calculations in Dota 2
 #Physical damage calculations are much more difficult and require their own seperate program
-#Does not check for certain improper inputs such as checking if the numbers given in the options
-#Are actually numbers and not strings
 
 choice = 0
 magicResist = 0
