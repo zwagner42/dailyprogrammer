@@ -7,7 +7,10 @@ def generic_Read(fileName):
 		target = open(fileName, "r")
 		lineList = []
 		for line in target:
-			lineList.append(line)
+			if(line.endswith("\n")):
+				lineList.append(line[:-1])
+			else:
+				lineList.append(line)
 			
 		target.close()
 		return lineList
@@ -22,7 +25,7 @@ def generic_Write(fileName, writeList):
 		target = open(fileName, "a")
 		
 		for line in writeList:
-			target.write(line + "\n")
+			target.write(line)
 			
 		target.close()
 	except:
