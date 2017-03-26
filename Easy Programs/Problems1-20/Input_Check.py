@@ -13,3 +13,10 @@ def is_Number_Range(s, n1, n2):
 		return True
 	except ValueError:
 		return False
+		
+def is_Number(s):
+	try:
+		int(s)
+		return True
+	except ValueError:
+		return False
