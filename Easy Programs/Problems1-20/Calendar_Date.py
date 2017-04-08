@@ -1,6 +1,6 @@
 #Program to find the day of the month based on a given number day, number month, and number year
 
-from sys import argv
+from sys import argv, exit
 from calendar import isleap, monthrange, weekday
 from Input_Check import is_Number, is_Number_Range
 
@@ -9,11 +9,13 @@ from Input_Check import is_Number, is_Number_Range
 def error_Message_Argument_List():
 	print("Error!! Wrong number of arguments. Sample on how to run this program:\n")
 	print("py Calendar_Date.py 10 12 1995")
+	exit()
 	
 #Displays an error message for invalid members in the argument list
 def error_Message_Invalid_Members():
 	print("Error!! Invalid user input! Sample on how to run this program:\n")
 	print("py Calendar_Date.py 10 12 1995")
+	exit()
 	
 #Finds and prints the day of the month for the given information from the command line arguments
 #Each argument passed is a piece from the argument list passed as integers
